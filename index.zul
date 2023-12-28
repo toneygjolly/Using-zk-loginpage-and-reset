@@ -1,0 +1,10 @@
+<?page title="Auto Generated index.zul"?>
+<window title="Hello i am Toney!!" border="normal" width="500px" apply="com.trainingzk.validaion">
+
+<label id="lName" value="You are using zk:"/>
+<button id="Buttonsubmit">Submit</button>
+<button id="resetButton">Reset</button>
+<button id="click">here</button>
+<label id="l" value="You are using zk"/>
+
+</window>

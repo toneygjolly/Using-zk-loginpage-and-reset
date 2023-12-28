@@ -1,0 +1,15 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<window title="login page" border="normal" width="500px" apply="com.trainingzk.login">
+<vlayout>
+           <label id="lName" value="Name" />
+            <textbox id="name" />
+             <label id="lpassword" value="password" />
+            <textbox id="password" />
+            <button id="Buttonsubmit">Submit</button>
+            <button id="resetButton">Reset</button>
+            <label id="l" value=""/>
+        </vlayout>
+
+
+
+</window>
