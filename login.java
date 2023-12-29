@@ -1,9 +1,10 @@
-package com.trainingzk;
-
+package firstZK;
 
 
 import java.awt.Button;
+import java.sql.SQLException;
 
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zk.ui.select.annotation.Wire;
@@ -11,7 +12,7 @@ import org.zkoss.zul.Label;
 import org.zkoss.zul.Textbox;
 import org.zkoss.zul.Window;
 
-public class login extends SelectorComposer<Window>
+public class login11 extends SelectorComposer<Window>
 {
 	private static final long serialVersionUID=1L;
 	@Wire
@@ -24,17 +25,26 @@ public class login extends SelectorComposer<Window>
 	private Button Buttonsubmit;
 	@Wire
 	private Button resetButton;
+	@Wire
+	private Button signupButton;
 	@Listen("onClick=#Buttonsubmit")
-	public void onsubmit()
+	public void onsubmit() throws SQLException
 	{
+		
 			String username=name.getValue();
 			String userpassword=password.getValue();
+			Usercheck u=new Usercheck();
 			
-			String uname="a";
-			String upassword="b";
-			if(username.equals(uname) && userpassword.equals(upassword)) {
-				l.setValue("logied");
+			boolean found=
+					u.user(username,userpassword);
+			
+//			String uname="a";
+//			String upassword="b";
+			if(found==true) {
+		//if(username.equals(name) && userpassword.equals(password)) {
+			l.setValue("logied");
 			}
+			//}
 			else {
 		l.setValue("invalid username");
 			}
@@ -44,5 +54,10 @@ public class login extends SelectorComposer<Window>
 	{
 		name.setValue(""); 
         password.setValue("");
+	}
+	@Listen("onClick=#signupButton")
+	public void signButton()
+	{
+		Executions.sendRedirect("formpage.zul");
 	}
 }
