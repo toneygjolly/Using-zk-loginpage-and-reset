@@ -1,0 +1,19 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="sign up" border="normal" width="500px" apply="firstZK.loginregirster">
+ <vlayout>
+  User Name <textbox id="nameBox" hflex="1" constraint="no empty"/>
+  Password <textbox id="password" hflex="1" constraint="no empty"/>
+  Gender:
+  <radiogroup id="genderRadio">
+  <radio label="male" value="male" checked="true"/>
+  <radio label="female" value="female"/>
+  </radiogroup>
+  Birthday <datebox id="birthdayBox" hflex="1" constraint="no empty,no today"/>
+  <checkbox id="acceptTermBox"/>Accept Terms
+   <button id="resetButton1" label="Reset"/>
+  <button id="submitButton" label="submit"/>
+   <label id="l" value=""/>
+</vlayout>
+</window>
+</zk>

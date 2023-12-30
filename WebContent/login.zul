@@ -1,0 +1,15 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" apply="firstZK.login">
+<label id="username">Username</label>
+<textbox id="loginText"></textbox>
+<separator></separator>
+<label id="password">Password</label>
+<textbox id="passText" type="password"></textbox>
+<separator></separator>
+<button id="loginButton">Login</button>
+<button id="reset"> Reset</button>
+<separator></separator>
+<label id="loginLabel"></label>
+</window>
+</zk>

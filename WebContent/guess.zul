@@ -1,0 +1,14 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="guess the word" border="normal" apply="firstZK.guess">
+
+    
+
+<label id="lName" value="lgenhsi"/>
+            <textbox id="name" />
+ <button id="c1">check</button>
+ <label id="l" value=""/>
+     <label id="messageLabel" />
+    <textbox id="scoreDisplay" readonly="true" />
+</window>
+</zk>

@@ -1,0 +1,27 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" apply="firstZK.home">
+<tabbox>
+<tabs>
+<tab label="Home"/>
+<tab label="direction"/>
+
+
+</tabs>
+<tabpanels>
+<tabpanel style="overflow:auto">
+<button id="Tiktac">Tiktac</button>
+<button id="hang">hang</button>
+<div height="300px" width="100%" style="background: yellow"/>
+<BUTTON id="layout"
+
+
+</tabpanel>
+<tabpanel>
+<div height ="300px" width="100%" style="background:red"/>
+</tabpanel>
+</tabpanels>
+
+</tabbox>
+</window>
+</zk>
