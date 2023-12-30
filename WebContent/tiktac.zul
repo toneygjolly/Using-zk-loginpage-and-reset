@@ -1,0 +1,22 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" width="500px" apply="Tik.tiktac">
+<button id="b1"/>
+<space></space>
+<button id="b2"/>
+<space></space>
+<button id="b3"/>
+<separator></separator>
+<button id="b4"/>
+<space></space>
+<button id="b5"/>
+<space></space>
+<button id="b6"/>
+<separator></separator>
+<button id="b7"/>
+<space></space>
+<button id="b8"/>
+<space></space>
+<button id="b9"/>
+</window>
+</zk>
